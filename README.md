@@ -8,6 +8,6 @@ To setup:
 $ cd ~/
 $ git clone --recursive https://github.com/xntrik/vim .vim
 $ cd .vim
-$ make  update
+$ make update
 $ make install
 ```
