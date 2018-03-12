@@ -18,3 +18,5 @@ To add a new vim plugin:
 $ cd bundle
 $ git submodule add <git>
 ```
+
+Cheers to @jessfraz for her https://github.com/jessfraz/.vim repo!
