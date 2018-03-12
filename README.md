@@ -11,3 +11,10 @@ $ cd .vim
 $ make update
 $ make install
 ```
+
+To add a new vim plugin:
+
+```console
+$ cd bundle
+$ git submodule add <git>
+```
