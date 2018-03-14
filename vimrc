@@ -133,6 +133,8 @@ inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
 
 " toggle NERDTree
 nnoremap <C-n> :NERDTreeToggle<CR>
+" NERDTree show hidden files
+let NERDTreeShowHidden=1
 
 " toggle Tagbar
 nmap <F12> :TagbarToggle<CR>
@@ -159,6 +161,9 @@ let g:airline#extensions#branch#enabled = 1
 " Buffergator cycling
 nmap <Leader>v :BuffergatorMruCyclePrev<CR>
 nmap <Leader>n :BuffergatorMruCycleNext<CR>
+
+" Zoom and then hide NERDTree
+nmap <Leader>m :NERDTreeClose<CR> <bar> :call zoom#toggle()<CR>
 
 "---------------------
 " Local customizations
