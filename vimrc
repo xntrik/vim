@@ -145,14 +145,6 @@ let g:ctrlp_switch_buffer = 0
 let g:ctrlp_show_hidden = 1
 nmap <Leader>p :CtrlPBuffer<CR>
 
-" ag
-let g:ag_mapping_message=0
-command -nargs=+ Gag Gcd | Ag! <args>
-nnoremap K :Gag "\b<C-R><C-W>\b"<CR>:cw<CR>
-if executable('ag')
-    let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
-endif
-
 " airline powerline fonts
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#whitespace#enabled = 0
