@@ -120,7 +120,6 @@ nmap <F8> :tabn 8<CR>
 nmap <F9> :tabn 9<CR>
 nmap <F10> :tabn 10<CR>
 nmap <F11> :tabl<CR>
-nmap <C-t> :tabnew<CR>
 
 "---------------------
 " Plugin configuration
@@ -156,6 +155,11 @@ nmap <Leader>n :BuffergatorMruCycleNext<CR>
 
 " Zoom and then hide NERDTree
 nmap <Leader>m :NERDTreeClose<CR> <bar> :call zoom#toggle()<CR>
+
+" vim-go
+let g:go_auto_sameids = 1
+let g:go_auto_type_info = 1
+let g:go_updatetime = 400
 
 "---------------------
 " Local customizations
