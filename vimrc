@@ -160,6 +160,7 @@ nmap <Leader>m :NERDTreeClose<CR> <bar> :call zoom#toggle()<CR>
 let g:go_auto_sameids = 1
 let g:go_auto_type_info = 1
 let g:go_updatetime = 400
+nmap <Leader>g :GoSameIdsAutoToggle<CR> :GoAutoTypeInfoToggle<CR>
 
 "---------------------
 " Local customizations
