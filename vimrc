@@ -18,9 +18,7 @@ set colorcolumn=80 " column marker
 augroup CursorLineOnlyInActiveWindow
     autocmd!
     autocmd VimEnter,WinEnter,BufWinEnter * setlocal cursorline
-    autocmd VimEnter,WinEnter,BufWinEnter * setlocal cursorcolumn
     autocmd WinLeave * setlocal nocursorline
-    autocmd WinLeave * setlocal nocursorcolumn
 augroup END
 
 " vim can autodetect this based on $TERM (e.g. 'xterm-256color')
