@@ -55,3 +55,6 @@
 [submodule "bundle/vim-terraform"]
 	path = bundle/vim-terraform
 	url = https://github.com/hashivim/vim-terraform
+[submodule "bundle/vim-zoom"]
+	path = bundle/vim-zoom
+	url = https://github.com/dhruvasagar/vim-zoom
