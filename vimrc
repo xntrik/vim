@@ -171,3 +171,6 @@ let $LOCALFILE=expand("~/.vimrc_local")
 if filereadable($LOCALFILE)
     source $LOCALFILE
 endif
+
+" Ack.vim with Ag (the silver searcher)
+let g:ackprg = 'ag --nogroup --nocolor --column'
