@@ -137,6 +137,7 @@ let NERDTreeShowHidden=1
 
 " toggle Tagbar
 nmap <F12> :TagbarToggle<CR>
+nmap <Leader>a :TagbarToggle<CR>
 
 " ctrlp
 "nnoremap ; :CtrlPBuffer<CR>
