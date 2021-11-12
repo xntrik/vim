@@ -126,9 +126,9 @@ nmap <F11> :tabl<CR>
 "---------------------
 
 " deoplete
-let g:deoplete#enable_at_startup = 1
+" let g:deoplete#enable_at_startup = 1
 " deoplete tab-complete
-inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
+" inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
 
 " toggle NERDTree
 nnoremap <C-n> :NERDTreeToggle<CR>
@@ -163,6 +163,10 @@ let g:go_auto_type_info = 1
 let g:go_updatetime = 400
 nmap <Leader>g :GoSameIdsAutoToggle<CR> :GoAutoTypeInfoToggle<CR>
 
+" CoC
+inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+
 "---------------------
 " Local customizations
 "---------------------
@@ -175,3 +179,6 @@ endif
 
 " Ack.vim with Ag (the silver searcher)
 let g:ackprg = 'ag --nogroup --nocolor --column'
+
+" Turn off highlighting
+nmap <Leader>h :noh<CR>
